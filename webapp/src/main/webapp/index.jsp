@@ -26,7 +26,7 @@
 </head>
 <body>
   <div align="center">
-    <h1>Welcome To CICD Job</h1>
+    <h1>Welcome To Demo Job</h1>
     <h2>This application was deployed using AWS CodeDeploy.</h2>
     <p>For next steps, read the <a href="http://aws.amazon.com/documentation/codedeploy">AWS CodeDeploy Documentation</a>.</p>
   </div>
