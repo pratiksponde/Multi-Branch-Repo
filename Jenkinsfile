@@ -2,7 +2,7 @@ node('built-in')
     {
         stage('Continuous Download ') 
          {
-            git 'https://github.com/pratiksponde/Maven.git'
+            git 'https://github.com/pratiksponde/Multi-Branch-Repo.git'
          }
         stage('Continuous Build') 
          {
