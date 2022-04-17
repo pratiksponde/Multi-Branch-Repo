@@ -18,6 +18,7 @@ node('built-in')
          }
          stage('Continuous Deployment') 
          {
+            input 'Waiting For Approval'
             sh 'scp /home/ubuntu/.jenkins/workspace/Multi-Branch-Pipeline_master/webapp/target/webapp.war ubuntu@172.31.10.211:/var/lib/tomcat8/webapps/prodenv1.war'
          } 
     }
