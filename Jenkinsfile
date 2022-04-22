@@ -10,7 +10,7 @@ node
          }
         stage('Continuous Deployment') 
          {
-            sh 'scp /home/ubuntu/.jenkins/workspace/Sample-MultiBranch_master/webapp/target/webapp.war ubuntu@172.31.8.206:/var/lib/tomcat8/webapps/testenv1.war'
+            sh 'scp /home/ubuntu/.jenkins/workspace/Sample-MultiBranch_master/webapp/target/webapp.war ec2-user@172.31.8.206:/var/lib/tomcat8/webapps/testenv1.war'
          } 
          stage('Continuous Testing') 
          {
@@ -19,6 +19,6 @@ node
          stage('Continuous Deployment') 
          {
             input message: 'Waiting For Approval ', submitter: 'Admin'
-            sh 'scp /home/ubuntu/.jenkins/workspace/Sample-MultiBranch_master/webapp/target/webapp.war ubuntu@172.31.8.206:/var/lib/tomcat8/webapps/prodenv1.war'
+            sh 'scp /home/ubuntu/.jenkins/workspace/Sample-MultiBranch_master/webapp/target/webapp.war ec2-user@172.31.8.206:/var/lib/tomcat8/webapps/prodenv1.war'
          } 
     }
