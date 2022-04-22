@@ -19,7 +19,7 @@ node
          stage('Continuous Deployment') 
          {
             input message: 'Waiting For Approval ', submitter: 'Admin'
-            mail bcc: '', body: 'tuzi aai ghaal approve kar madarchod', cc: 'simplynadaf@gmail.com', from: '', replyTo: '', subject: '', to: 'patharkar123@gmail.com'
+            mail bcc: '', body: 'tuzi aai ghaal madarchod iftaar party khaun haglo aamhi', cc: 'pratikponde12@gmail.com', from: 'patharkar123@gmail.com', replyTo: '', subject: '', to: 'simplynadaf@gmail.com'
             sh 'scp /home/ubuntu/.jenkins/workspace/Sample-MultiBranch_master/webapp/target/webapp.war ubuntu@172.31.2.143:/var/lib/tomcat8/webapps/prodenv1.war'
          } 
     }
